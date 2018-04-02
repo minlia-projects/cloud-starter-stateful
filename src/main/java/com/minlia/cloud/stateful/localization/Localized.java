@@ -10,9 +10,10 @@ import java.lang.annotation.Target;
 /**
  * Created by will on 8/22/17.
  */
-@Target({ ElementType.TYPE,ElementType.FIELD})
+@Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RUNTIME)
 @Inherited
 public @interface Localized {
-    Localize[] values() default {};
+
+  Localize[] values() default {};
 }

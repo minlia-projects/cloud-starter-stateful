@@ -25,5 +25,5 @@ public @interface Localize {
    */
   String code() default "";
 
-    LanguageTypes type() default LanguageTypes.Message;
+  LanguageTypes type() default LanguageTypes.Message;
 }
