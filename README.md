@@ -29,6 +29,10 @@ localization  本地化
   "message": "Account Unavailable: Please confirm that the status of your credential.",//业务返回释义
   "requestId": "cZCu5aAftUn2ivn2rcKb2YUhb6N7ijP420180402212405106502",//当前请求编号
   "status": 200,//请求的http状态码
+  "payload":{
+    "id":33333333333,
+    "balance":2288772.00
+  }
   "timestamp": 1522675445311//当前请求时间戳
 }
 ```
