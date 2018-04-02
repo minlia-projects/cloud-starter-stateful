@@ -2,6 +2,10 @@
 
 为避免杂乱无章的 API 结构，规范化请求与返回体，返回message已输出国际化后的结果
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.minlia.cloud.starter/cloud-starter-stateful/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.minlia.cloud.starter/cloud-starter-stateful/) 
+[![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt) 
+[![Build Status](https://travis-ci.org/minlia-projects/cloud-starter-stateful.svg?branch=master)](https://travis-ci.org/minlia-projects/cloud-starter-stateful)
+
 
 ## 项目结构说明  
 ```
