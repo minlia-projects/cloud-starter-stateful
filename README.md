@@ -29,7 +29,7 @@ localization  本地化
 ```
   @PostMapping(value = "/api/status/post")
   @ApiOperation(value = "状态", notes = "测试提交", httpMethod = "POST")
-  public StatefulBody postStatus(  @RequestBody WithIdBody body) {
+  public StatefulBody postStatus(@Valid  @RequestBody WithIdBody body) {
     return SuccessResponseBody.builder().build();
   }
 ```
