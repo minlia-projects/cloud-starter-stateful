@@ -11,7 +11,7 @@ generator     生成器
 localization  本地化
 ```
 
-## 添加依赖项:
+## 集成到自已的项目时添加依赖项    
 
 ```pom
 <dependency>
