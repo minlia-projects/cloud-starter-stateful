@@ -7,8 +7,6 @@
 [![Build Status](https://travis-ci.org/minlia-projects/cloud-starter-stateful.svg?branch=master)](https://travis-ci.org/minlia-projects/cloud-starter-stateful)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/minlia-projects/cloud-starter-stateful.svg?columns=all)](https://waffle.io/minlia-projects/cloud-starter-stateful)
 
-
-
 ## 项目结构说明  
 ```
 body          请求体与返回体
