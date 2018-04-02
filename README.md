@@ -30,7 +30,6 @@ localization  本地化
   @PostMapping(value = "/api/status/post")
   @ApiOperation(value = "状态", notes = "测试提交", httpMethod = "POST")
   public StatefulBody postStatus(  @RequestBody WithIdBody body) {
-    Assertion.is(true, ApiCode.ACCOUNT_DISABLED);
     return SuccessResponseBody.builder().build();
   }
 ```
