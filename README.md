@@ -46,3 +46,6 @@ localization  本地化
   "timestamp": 1522675445311//当前请求时间戳
 }
 ```
+
+[![演示](http://g.recordit.co/oI67yn0jSj.gif)](http://minlia.com/)
+
