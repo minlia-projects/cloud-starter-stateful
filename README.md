@@ -31,7 +31,7 @@ localization  本地化
   "status": 200,//请求的http状态码
   "payload":{
     "id":33333333333,
-    "balance":2288772.00
+    "balance":228866.00
   }
   "timestamp": 1522675445311//当前请求时间戳
 }
