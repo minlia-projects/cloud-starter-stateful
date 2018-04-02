@@ -22,8 +22,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
- * @author user
- * @date 11/14/15
+ * @author will
  */
 public class FailureResponseBody<T> extends ApiResponseBody {
 

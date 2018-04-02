@@ -22,6 +22,7 @@ public @interface Localize {
 
   /**
    * 国际化译文编码
+   * @return String of api code
    */
   String code() default "";
 

@@ -7,9 +7,7 @@ import com.minlia.cloud.stateful.localization.Localized;
 
 /**
  * API 业务返回码定义
- *
  * @author will
- * @date 6/19/17
  */
 @Localized
 public abstract class ApiCode {

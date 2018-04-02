@@ -99,7 +99,10 @@ public class StatefulBody<T> implements Body {
 
 
   /**
-   * added by qianyi on 2017/4/18.
+   * @param code
+   * @param status
+   * @param message
+   * @param payload
    */
   public StatefulBody(Integer code, Integer status, String message, T payload) {
     this();
