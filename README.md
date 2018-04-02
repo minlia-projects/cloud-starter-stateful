@@ -21,3 +21,14 @@ localization  本地化
 </dependency>
 ```
 
+## 返回报文示例
+
+```
+{
+  "code": 50004,//业务返回码
+  "message": "Account Unavailable: Please confirm that the status of your credential.",//业务返回释义
+  "requestId": "cZCu5aAftUn2ivn2rcKb2YUhb6N7ijP420180402212405106502",//当前请求编号
+  "status": 200,//请求的http状态码
+  "timestamp": 1522675445311//当前请求时间戳
+}
+```
