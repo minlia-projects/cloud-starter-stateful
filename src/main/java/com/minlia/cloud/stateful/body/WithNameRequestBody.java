@@ -6,7 +6,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created by will on 6/20/17.
+ *
+ * @author will
  */
 @ApiModel(value = "带名称的请求体")
 @Data

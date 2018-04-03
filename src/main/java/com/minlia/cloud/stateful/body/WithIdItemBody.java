@@ -4,7 +4,8 @@ import java.util.List;
 import lombok.Data;
 
 /**
- * Created by will on 6/20/17.
+ *
+ * @author will
  */
 @Data
 public class WithIdItemBody implements Body {

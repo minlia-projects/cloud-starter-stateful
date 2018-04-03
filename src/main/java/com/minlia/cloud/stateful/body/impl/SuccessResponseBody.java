@@ -53,14 +53,17 @@ public class SuccessResponseBody<T> extends ApiResponseBody {
     return new SuccessResponseBody.SuccessResponseBodyBuilder();
   }
 
+  @Override
   public boolean equals(Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
   }
 
+  @Override
   public int hashCode() {
     return HashCodeBuilder.reflectionHashCode(this, false);
   }
 
+  @Override
   public String toString() {
     return ToStringBuilder.reflectionToString(this);
   }
@@ -99,14 +102,17 @@ public class SuccessResponseBody<T> extends ApiResponseBody {
     }
 
 
+    @Override
     public boolean equals(Object o) {
       return EqualsBuilder.reflectionEquals(this, o);
     }
 
+    @Override
     public int hashCode() {
       return HashCodeBuilder.reflectionHashCode(this, false);
     }
 
+    @Override
     public String toString() {
       return ToStringBuilder.reflectionToString(this);
     }

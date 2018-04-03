@@ -17,7 +17,9 @@ package com.minlia.cloud.stateful.body;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
-//@JsonInclude(JsonInclude.Include.NON_NULL)
+/**
+ * @author will
+ */ //@JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE, isGetterVisibility = JsonAutoDetect.Visibility.NONE, creatorVisibility = JsonAutoDetect.Visibility.NONE)
 public interface Body extends java.io.Serializable {
 

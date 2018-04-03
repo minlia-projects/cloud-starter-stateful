@@ -26,6 +26,9 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * @author will
+ */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @ApiModel(value = "状态化的返回体")
@@ -117,10 +120,6 @@ public class StatefulBody<T> implements Body {
   public Date getTimestamp() {
     return timestamp;
   }
-
-//    public void setTimestamp(Date timestamp) {
-//        this.timestamp = timestamp;
-//    }
 
   public Integer getCode() {
     return code;

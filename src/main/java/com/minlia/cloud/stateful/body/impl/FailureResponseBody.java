@@ -69,14 +69,17 @@ public class FailureResponseBody<T> extends ApiResponseBody {
     return new FailureResponseBody.FailureResponseBodyBuilder();
   }
 
+  @Override
   public boolean equals(Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
   }
 
+  @Override
   public int hashCode() {
     return HashCodeBuilder.reflectionHashCode(this, false);
   }
 
+  @Override
   public String toString() {
     return ToStringBuilder.reflectionToString(this);
   }
@@ -97,10 +100,12 @@ public class FailureResponseBody<T> extends ApiResponseBody {
       return EqualsBuilder.reflectionEquals(this, other);
     }
 
+    @Override
     public int hashCode() {
       return HashCodeBuilder.reflectionHashCode(this, false);
     }
 
+    @Override
     public String toString() {
       return ToStringBuilder.reflectionToString(this);
     }

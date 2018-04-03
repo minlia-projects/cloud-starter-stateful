@@ -36,7 +36,7 @@ public enum BodyState {
    */
   Unknown;
 
-  public static final String Failure_Message = "Failed";
-  public static final String Success_Message = "Ok";
-  public static final String Unknown_Message = "Unknown";
+  public static final String FAILURE_MESSAGE = "Failed";
+  public static final String SUCCESS_MESSAGE = "Ok";
+  public static final String UNKNOWN_MESSAGE = "Unknown";
 }
