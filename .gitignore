@@ -18,11 +18,11 @@ target/
 
 ### NetBeans ###
 nbproject/private/
+build/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
 .DS_Store
-/build/
 pom.xml.releaseBackup
 release.properties
