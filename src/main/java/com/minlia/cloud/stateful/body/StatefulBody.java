@@ -31,7 +31,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@ApiModel(value = "StatefulBody",description = "状态化的返回体")
+@ApiModel(value = "statefulBody",description = "状态化的返回体")
 public class StatefulBody<T> implements Body {
 
   public static final String SUCCESS_MESSAGE = "OK";
@@ -47,39 +47,39 @@ public class StatefulBody<T> implements Body {
    * 携带的负载返回对象
    */
   @JsonProperty
-  @ApiModelProperty(value = "Payload",notes = "携带的对象")
+  @ApiModelProperty(value = "payload",notes = "携带的对象")
   protected T payload;
 
   /**
    * 当前操作时间
    */
   @JsonProperty
-  @ApiModelProperty(value = "Timestamp",notes = "当前操作完成的时间戳")
+  @ApiModelProperty(value = "timestamp",notes = "当前操作完成的时间戳")
   protected Date timestamp;
 
   @JsonProperty
-  @ApiModelProperty(value = "RequestId",notes = "请求ID")
+  @ApiModelProperty(value = "requestId",notes = "请求ID")
   protected String requestId = RequestIdGenerator.generateRequestId();
 
   /**
    * 业务操作完成后的返回代码
    */
   @JsonProperty
-  @ApiModelProperty(value = "Code",notes = "业务操作完成后的返回代码")
+  @ApiModelProperty(value = "code",notes = "业务操作完成后的返回代码")
   protected Integer code;
 
   /**
    * 用于兼容http状态码, 一般在业务上不使用
    */
   @JsonProperty
-  @ApiModelProperty(value = "HttpStatus",notes = "用于兼容http状态码, 一般在业务上不使用")
+  @ApiModelProperty(value = "httpStatus",notes = "用于兼容http状态码, 一般在业务上不使用")
   protected Integer status;
 
   /**
    * 业务操作完成后的返回信息
    */
   @JsonProperty
-  @ApiModelProperty(value = "Message",notes = "业务操作完成后的返回信息")
+  @ApiModelProperty(value = "message",notes = "业务操作完成后的返回信息")
   protected String message;
 
   public StatefulBody() {
