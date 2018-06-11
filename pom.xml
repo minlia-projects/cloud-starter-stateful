@@ -4,7 +4,7 @@
 
   <groupId>com.minlia.cloud.starter</groupId>
   <artifactId>cloud-starter-stateful</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
+  <version>2.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Cloud Starter Stateful</name>
@@ -80,7 +80,7 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.0.1.RELEASE</version>
+        <version>2.0.2.RELEASE</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
