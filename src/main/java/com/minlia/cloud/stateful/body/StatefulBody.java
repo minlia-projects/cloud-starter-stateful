@@ -17,7 +17,7 @@ package com.minlia.cloud.stateful.body;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.minlia.cloud.stateful.generator.RequestIdGenerator;
+import com.minlia.cloud.stateful.generator.SnowFlakeUtil;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
@@ -59,7 +59,8 @@ public class StatefulBody<T> implements Body {
 
   @JsonProperty
   @ApiModelProperty(value = "requestId",notes = "请求ID")
-  protected String requestId = RequestIdGenerator.generateRequestId();
+//  protected String requestId = RequestIdGenerator.generateRequestId();
+  protected String requestId= String.valueOf(SnowFlakeUtil.getFlowIdInstance().nextId());
 
   /**
    * 业务操作完成后的返回代码
@@ -169,4 +170,15 @@ public class StatefulBody<T> implements Body {
   public int hashCode() {
     return HashCodeBuilder.reflectionHashCode(this);
   }
+
+
+  /**
+   * 新增便利性方法
+   * @return
+   */
+  public boolean isSuccess() {
+    return null != status && status.equals(SUCCESS);
+  }
+
+
 }
