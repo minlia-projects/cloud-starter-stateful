@@ -2,6 +2,7 @@ package com.minlia.cloud.stateful.body;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.io.Serializable;
 import lombok.Data;
 
 /**
@@ -10,12 +11,12 @@ import lombok.Data;
  */
 @Data
 @ApiModel(value = "withIdBody",description = "带Id的主体")
-public class WithIdBody implements Body {
+public class WithIdBody<ID extends Serializable> implements Body {
 
   /**
    * ID
    */
   @ApiModelProperty(value = "id",notes = "ID")
-  private Long id;
+  private ID id;
 
 }

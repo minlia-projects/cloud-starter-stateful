@@ -43,6 +43,7 @@ public class Responses {
   }
 
 
+  // 417 expectation failed
 
   public static org.springframework.http.ResponseEntity<String> expectationFailed() {
     return status(HttpStatus.EXPECTATION_FAILED, HttpStatus.EXPECTATION_FAILED.getReasonPhrase());
@@ -58,6 +59,25 @@ public class Responses {
     }
     return status(HttpStatus.EXPECTATION_FAILED, body, excludeProperties);
   }
+
+
+  // 201 created
+  public static org.springframework.http.ResponseEntity<String> created() {
+    return status(HttpStatus.CREATED, HttpStatus.CREATED.getReasonPhrase());
+  }
+  public static <T> org.springframework.http.ResponseEntity<T> created(final T body) {
+    return status(HttpStatus.CREATED, body);
+  }
+
+  public static <T> org.springframework.http.ResponseEntity<T> created(final T body,
+      final String excludeProperties) {
+    if (null == excludeProperties || WILDCARD_ALL.equals(excludeProperties)) {
+      return notFound(body);
+    }
+    return status(HttpStatus.CREATED, body, excludeProperties);
+  }
+
+
 
 
   public static org.springframework.http.ResponseEntity<String> unauthorized() {
